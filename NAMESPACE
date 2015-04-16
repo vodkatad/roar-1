@@ -1,0 +1,26 @@
+importFrom(rtracklayer, import)
+importFrom(S4Vectors, DataFrame)
+import(methods, GenomicRanges, GenomicAlignments)
+
+exportClasses("RoarDataset")
+
+export(
+  RoarDataset,
+  RoarDatasetFromFiles
+)
+
+exportMethods(
+   countPrePost,
+   computeRoars,
+   computePvals,
+   computePairedPvals,
+   totalResults,
+   fpkmResults,
+   countResults,
+   standardFilter,
+   pvalueFilter,
+   pvalueCorrectFilter
+#   cores
+#  "cores<-"
+)
+
